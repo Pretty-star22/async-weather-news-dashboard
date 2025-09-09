@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "callback":"tsc && node dist/callbackVersion.js",
+    "async":"tsc && node dist/asyncVersion.js",
+    "promise":"tsc && node dist/promiseVersion.js"
   },
   "repository": {
     "type": "git",
