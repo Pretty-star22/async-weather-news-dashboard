@@ -12,7 +12,7 @@ server.listen(3000, () => {
 function callbackWeather(callback:(error:Error | null, weatherData?:any) => void){
     let city = "johannesburg";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=cfc868854fc1f8db2118de2e4e5dae99`
-    let newsUrl = "https://dummyjson.com/posts/1";
+   
 
     https.get(apiUrl, (response) => {
         let data = '';
